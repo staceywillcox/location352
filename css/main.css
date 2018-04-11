@@ -8,7 +8,8 @@ html {
 #head{
 	background-color: rgba(241,141,0,1);
 	width:100%;
-	height: 100px;
+	height: auto;
+	overflow: auto;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
 #demo {
 	font-size: 1em;
 	font-family: 'Calibri', sans-serif;
-	float: right;
+	float: left;
 	text-align: left;
 	color: rgba(70,70,85,1);
 	padding:5px;
@@ -34,4 +35,22 @@ button{
 	border: none;
 	background-color: rgba(241,141,0,1);
 	color: rgba(120,120,120,1);
+	float: left;
+}
+
+#dataContainerOrientation{
+	font-size:1em;
+	float: left;
+	margin: 10px;
+}
+
+#dataContainerMotion{
+	font-size:1em;
+	float: left;
+	margin:10px;
+}
+
+.orientation{
+	padding: 10px;
+	float: left;
 }

@@ -24,7 +24,17 @@
 
 <section id="head">
 <button onclick="getLocation()">generate location</button>
+  <section class="orientation">
+
+    <div id="dataContainerMotion">
+      No device motion data
+    </div>
+        <div id="dataContainerOrientation">
+      No device orientation data
+    </div>
+   </section> 
 <p id="demo"></p>
+
 </section>
     <script>
     function init() {
@@ -62,12 +72,7 @@
     </script>
   </head>
   <body onload="init()">
-    <div id="dataContainerOrientation">
-      No device orientation data
-    </div>
-    <div id="dataContainerMotion">
-      No device motion data
-    </div>
+
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -93,7 +98,6 @@
       var map, infoWindow;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
           zoom: 6
         });
         infoWindow = new google.maps.InfoWindow;
