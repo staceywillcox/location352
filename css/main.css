@@ -1,31 +1,26 @@
 html {
     font-family: 'Calibri', sans-serif;
     font-size: 16px;
-    color: rgb(70,70,85);
+    color: rgb(253,253,253);
     overflow-x: hidden;
     
 }
-#head{
-	background-color: rgba(241,141,0,1);
-	width:100%;
-	height: auto;
-	overflow: auto;
-}
+
 
 body {
     width: 100%;
 }
 
-#demo {
-	font-size: 1em;
-	font-family: 'Calibri', sans-serif;
-	float: left;
-	text-align: left;
-	color: rgba(70,70,85,1);
-	padding:5px;
-	margin-top:20px;
-}
 
+
+#head{
+	background-color: rgba(241,141,0,1);
+	width:100%;
+	height: auto;
+	overflow: auto;
+	display: flex;
+	flex-direction: row;
+}
 
 button{
 	width:80px;
@@ -33,24 +28,41 @@ button{
 	margin-left: 10px;
 	margin-top:10px;
 	border: none;
-	background-color: rgba(241,141,0,1);
-	color: rgba(120,120,120,1);
+	background-color: rgba(255,165,0,1);
+	color: rgba(253,253,253,1);
 	float: left;
+	width:100%;
+}
+
+.button{
+		flex-basis:33.33%;
 }
 
 #dataContainerOrientation{
 	font-size:1em;
-	float: left;
-	margin: 10px;
+	padding-left:50px;
+	flex-basis:33.33%;
+	margin: 15px;
+	text-align: center;
 }
 
 #dataContainerMotion{
 	font-size:1em;
-	float: left;
-	margin:10px;
+	padding-left: 50px;
+	margin: 15px;
+	text-align:center;
+	flex-basis:33.33%;
+}
+
+#demo {
+	font-size: 1em;
+	font-family: 'Calibri', sans-serif;
+	text-align: center;
+	color: rgba(253,253,253,1);
+	margin-top: 110px;
 }
 
 .orientation{
 	padding: 10px;
-	float: left;
+
 }
